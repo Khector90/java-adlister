@@ -3,15 +3,17 @@
     String userName = request.getParameter("username");
     String passWord = request.getParameter("password");
 
+    if (request.getMethod().equalsIgnoreCase("Post"))
+    if (userName.equals("admin") && passWord.equals("password")) {
+        response.sendRedirect("/profile.jsp");
 
+    }
+    else {
+        response.sendRedirect("/login.jsp");
 
+    }
 
     %>
-
-
-
-
-
 
 
 

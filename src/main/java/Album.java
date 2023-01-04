@@ -3,6 +3,10 @@ public class Album {
     private String Album;
     private String artist;
 
+    public Album(String thriller, String michael_jackson) {
+
+    }
+
 
     public String getAlbum() {
         return Album;

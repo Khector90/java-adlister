@@ -3,7 +3,9 @@ public class Album {
     private String Album;
     private String artist;
 
-    public Album(String thriller, String michael_jackson) {
+    public Album(String title, String artist) {
+         this.Album = title;
+         this.artist = artist;
 
     }
 
@@ -20,8 +22,11 @@ public class Album {
     public void setArtist(String artist) {
         this.artist = artist;
     }
-    public Album() {
-        this.Album = "";
-        this.artist = "";
+
+    public Album (){
+
     }
+
+
+
 }

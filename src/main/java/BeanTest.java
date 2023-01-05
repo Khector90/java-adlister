@@ -10,8 +10,11 @@ public class BeanTest {
         Author author1 = new Author("Stephen King");
         Author author2 = new Author("Jane Austen");
 
-        Quote quote1 = new Quote("The only thing necessary for the triumph of evil is for good men to do nothing.", author1);
-        Quote quote2 = new Quote("It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.", author2);
+        Quote quote1 = new Quote("The only thing necessary for the triumph of evil is for good men to do nothing.", author1.getAuthor());
+
+        System.out.println("quote1.getQuote() = " + quote1.getQuote());
+        System.out.println("quote1.getAuthor() = " + quote1.getAuthor());
+        Quote quote2 = new Quote("It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.", author2.getAuthor());
     }
 
 }

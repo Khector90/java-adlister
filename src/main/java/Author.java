@@ -2,7 +2,11 @@ public class Author {
 
     private String Author;
 
-    public Author(String stephen_king) {
+    public Author(String authorName) {
+        this.Author = authorName;
+    }
+
+    public Author() {
     }
 
     public String getAuthor(){
